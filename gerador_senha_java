@@ -1,0 +1,18 @@
+#esse codigo, gera letras maiusculas e minusculas com caracteres especiais
+#altere conforme sua necessidade
+#by kuhnen
+
+function gerarSenha() {
+      var caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+      var senha = '';
+      var tamanho = document.getElementById('tamanho').value;
+
+      for (var i = 0; i < tamanho; i++) {
+        var randomIndex = Math.floor(Math.random() * caracteres.length);
+        senha += caracteres.charAt(randomIndex);
+      }
+
+      var resultadoDiv = document.getElementById('resultado');
+      resultadoDiv.innerText = 'Senha Gerada: ' + senha;
+      resultadoDiv.style.display = 'block';
+    }
