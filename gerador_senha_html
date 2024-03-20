@@ -1,0 +1,32 @@
+#altera conforme sua necessidade.
+#atenção no caminho do arquivo
+#by kuhnen
+
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Gerador de Senha</title>
+  <center><img src="SUALOGO.png" alt="logo"></img></center>
+  <script type="text/javascript" src="gerador.js"></script> 
+
+  </head>
+<body>
+
+  <br><br>
+
+  <div class="container">
+    <h4>Gerador de Senha</h4>
+    <label for="tamanho">Tamanho da senha:</label>
+    <input type="number" id="tamanho" min="1" max="100" value="10">
+    <button onclick="gerarSenha()">Gerar Senha</button>
+    <div id="resultado"></div>
+  </div>
+  
+   <br><br>
+ <footer>
+  @ <article>
+</footer>
+
+</body>
+<!-- kuhnen -->
+</html>
